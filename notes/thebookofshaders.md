@@ -2,7 +2,7 @@
 https://thebookofshaders.com
 
 ## What is a shader?
-A function that gets run by each compute unit (thread) of GPU in parallel for determining how to color each pixel on the screen. GPUs, unlike CPUs which have a few big and powerful microprocessors, have several tiny microprocessors running in parallel.
+A function that gets run by each compute unit (thread) of the GPU in parallel for determining how to color each pixel on the screen. Unlike CPUs which have a few big and powerful microprocessors, GPUs have several tiny microprocessors running in parallel.
 
 Shaders are painful to work with because the shader function is *blind* and *memoryless*. All data must flow in the  same direction. It is impossible to check the result of another thread, modify the input data, or pass the outcome of a thread into another thread. Allowing thread-to-thread communications puts the integrity of the data at risk.
 
